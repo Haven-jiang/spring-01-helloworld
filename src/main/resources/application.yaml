@@ -1,0 +1,17 @@
+#关闭模板引擎的缓存
+spring:
+  messages:
+    basename: i18n.login
+  thymeleaf:
+    cache: false
+  datasource:
+    username: root
+    password: Justholdway521
+    url: jdbc:mysql://127.0.0.1:3306/boot?serverTimezone=UTC&useUnicode=true&CharacterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 80
+mybatis:
+  type-aliases-package: com.Haven.pojo
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
